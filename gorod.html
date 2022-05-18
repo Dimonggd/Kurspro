@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ledger&display=swap" rel="stylesheet">
+    <title>Город</title>
+</head>
+<body>
+    <div class="main">
+            <header class="header">
+                <div class="contentik">
+                    <div class="header__body">
+                        <a href="index.html" class="header__logo">
+                            <img src="image/logo.png" alt="Логотип" class="logo">
+                        </a>
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
+                        <nav class="header__menu">
+                            <ul class="header__list">
+                                <li><a href="index.html" class="header__link">Главная</a></li>
+                                <li><a href="gorod.html" class="header__link">Город</a></li>
+                                <li><a href="vlast.html" class="header__link">Власть</a></li>
+                                <li><a href="reklam.html" class="header__link">Рекламодателям</a></li>
+                                <li><a href="mapchuv.html" class="header__link">Карта Чувашии</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content">
+                <div class="slaid">
+                    <img src="image/foto.png" alt="Чувашия">
+                </div>
+                <div class="gerb">
+                    <img src="image/gerb.png" alt="Герб" class="gerdf">
+                    <p>Город Чебоксары <br>Официальный портал</p>
+                </div>
+            </div>
+        <main>
+            
+            <div id="current_date_time_block" >
+                <script type="text/javascript">
+                    /* функция добавления ведущих нулей */
+                    /* (если число меньше десяти, перед числом добавляем ноль) */
+                    function zero_first_format(value)
+                    {
+                        if (value < 10)
+                        {
+                            value='0'+value;
+                        }
+                        return value;
+                    }
+                    /* функция получения текущей даты и времени */
+                    function date_time()
+                    {
+                        var current_datetime = new Date();
+                        var day = zero_first_format(current_datetime.getDate());
+                        var month = zero_first_format(current_datetime.getMonth()+1);
+                        var year = current_datetime.getFullYear();
+                        var hours = zero_first_format(current_datetime.getHours());
+                        var minutes = zero_first_format(current_datetime.getMinutes());
+                        var seconds = zero_first_format(current_datetime.getSeconds());
+        
+                        return "Сегодня   "+day+"."+month+"."+year+" "+hours+":"+minutes+":"+seconds+"";
+                    }
+                    /* выводим текущую дату и время на сайт в блок с id "current_date_time_block" */
+                    document.getElementById('current_date_time_block').innerHTML = date_time();
+                </script>
+                </div> 
+
+            <div class="container">
+                <div class="pokrov">
+                    <div class="ogorode">
+                        <p class="nikolaev"><b>Истрия города</b></p>
+                        <p class="istoriya">Столица Чувашской Республики - город Чебоксары (чув. Шупашкар), расположенный на правом берегу Волги, имеет многовековую историю<br></p>
+                            <p class="istoriya">
+                            Чебоксары – город с многовековой историей. В письменных источниках Чебоксары упоминаются с 1469 года, когда русские воины остановились здесь на своем пути в Казанское ханство.Однако как населенный пункт он существовал значительно раньше. По данным археологических раскопок, на его месте с рубежа XIII - XIV веков существовало болгаро-чувашское поселение.<br>
+                        </p>
+                            <p class="istoriya">
+                            С 1555 года, после добровольного вхождения чувашского края в состав Московского государства, здесь была заложена крепость для защиты южных рубежей страны и создан Чебоксарский уезд. К концу 17 века город утрачивает свои оборонительные функции – Чебоксары становятся известным торговым центром Поволжья.<br>
+                        </p>
+                        <p class="istoriya">
+                            В 1625 в Чебоксарах насчитывалось 458 военнослужащих; по данным 1646 г., на посаде проживал 661 человек мужского пола. В 1-й четверти XVIII века некоторые категории военнослужилых людей (стрельцы, казаки) были переведены в податные сословия. По результатам 1-й ревизии 1723 г. в Чебоксарах насчитывалось 1924 чел. податного населения (муж. пола); в 1879 проживало 4498 человек (2308 жен., 2190 муж.), в т.ч. 2450 мещан, 277 купцов, 146 дворян. С конца XVII - начала XVIII столетия Чебоксары считались известным торговым городом Поволжья, в 1781 году приобрели статус провинциального города Казанской губернии. В начале XIX века население его составляло пять с половиной тысяч жителей, а промышленность ограничивалась лесопилкой и несколькими маленькими заводами.
+                            </p>
+                    </div>
+                    
+                    <div class="cheb">
+                        <img src="image/oger.png" alt="Герб Чебоксары" class="gerbchuv">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="for">
+                <p class="zag">Связаться снами или сообщить новость</p>
+                <p class="tex"> Отправьте свою новость в редакцию, расскажите о проблеме или подкиньте тему для публикации. 
+                    Сюда же загружайте ваше видео и фото.</p>
+                <a class="btn open-popup"><p class="bt">Написать в редакцию</p></a>    
+                <p class="kon">КРУГЛОСУТОЧНЫЙ ТЕЛЕФОН СЛУЖБЫ НОВОСТЕЙ<br>
+                    8 (343) 379-49-95</p>
+            </div>
+            <div class="popup-bg">
+                <div class="popup">
+                    <img src="image/close.png" alt="icon" class="close-popup">
+                    <form action="#" class="form__body" id="form">
+                        <p class="popup-text"><b>Написать в редакцию</b></p>
+                        <input type="text" name="popup-form" placeholder="Ваше Имя *" class="form__input _req" >
+                        <input type="email" name="popup-form" placeholder="Email *" class="form__input _req _email">
+                        <div class="radio">
+                            <div class="options">
+                                <input id="formnews" type="radio" value="news" name="novost" class="option__input" checked>
+                                <label for="formnews" class="option_label1">Новость</label>
+                            </div>
+                            <div class="options">
+                                <input id="formob" type="radio" value="ob" name="novost" class="option__input">
+                                <label for="formob" class="option_label1">Обьявление</label>
+                            </div>
+                        </div>
+                        <textarea name="popup-form" cols="45" rows="5" placeholder="Сообщение" class="form__input"></textarea>
+                        <input type="submit" value="Отправить" >
+                    </form> 
+                </div>
+            </div>
+            
+            <div class="pod">
+                <p class="pglav">Контактные данные для Роскомнадзора и государственных органов<br>
+                    Связаться с отделом продаж: 8 (343) 379-49-10, adv@iportal.ru
+                    Публикации с пометкой «На правах рекламы», «Партнёрский проект», «Открытая трибуна»,
+                     «Выборы-2020» и «Выборы-2021» оплачены рекламодателем. Редакция сайта не несет
+                     ответственности за достоверность информации, содержащейся в рекламных объявлениях.</p>
+                <img class="image" src="image/Ellipse6.png" alt="Лого">
+            </div>
+            <footer>
+                <div class="ptex">
+                    <h2>© МО г.Чебоксары, 2010 - 2022</h2>
+                </div>
+                <div class="seti">
+                    <p class="sce">Мы в соцсетях:</p>
+                    <img src="image/tg.svg" alt="Телеграм">
+                    <img src="image/yt.svg" alt="Ютуб">
+                    <img src="image/tw.svg" alt="Твиттер">
+                    <img src="image/in.svg" alt="Инстаграм">
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
