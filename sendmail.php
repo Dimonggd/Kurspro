@@ -10,7 +10,7 @@
     $mail->SetLanguage('ru', 'phpmailer/language/');
     $mail->IsHTML(true);
 
-    $mail->setFrom('info@fls.guru', 'Салам');
+    $mail->setFrom('yourchanalemane@gmail.com', 'Салам');
     $mail->addAddress('yourchanalemane@gmail.com');
     $mail->Subject = 'Привет! Это "Димон"';
 
